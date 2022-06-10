@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container > p{
+	@apply m-auto;
+}
+
+#heading{
+	letter-spacing: 0.8em;
+}
