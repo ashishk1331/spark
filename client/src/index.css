@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Cascadia';
+	src: url('./assets/fonts/CascadiaCode-Regular.ttf');
+}
+
+*{
+	font-family: 'Cascadia', 'monospace';
+}
+
+/*p.alpha::after{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		background-color: #0ea5e9;
+		top: 0;
+		left: 100%;
+		transform: translateY(-1px);
+}*/
