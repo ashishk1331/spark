@@ -1,4 +1,4 @@
-import { Sun, Moon, ArrowsClockwise } from 'phosphor-react'
+import { Sun, Moon, ArrowsClockwise, Sparkle } from 'phosphor-react'
 
 function Header({ darkMode, setDarkMode, refresh, iconSize, setIsLoading }){
 
@@ -18,22 +18,23 @@ function Header({ darkMode, setDarkMode, refresh, iconSize, setIsLoading }){
 	}
 
 	return (
-		<header className="flex items-center w-full py-8">
-			<h1 className="uppercase tracking-wider text-2xl mr-auto">
-				spark
-			</h1>
+		<header className="flex items-center w-full py-12">
+
+			<Sparkle weight="fill" size={iconSize} />
+
+			<h1 className="text-lg ml-4"> spark </h1>
 
 			<button
-				className="mx-8"
+				className="mx-8 ml-auto"
 				onClick={() => {
 					setDarkMode(!darkMode)
 				}}
 			>
 				{
 					darkMode?
-					<Moon weight="fill" size={iconSize} />
-					:
 					<Sun weight="fill" size={iconSize} />
+					:
+					<Moon weight="fill" size={iconSize} />
 				}
 			</button>
 
